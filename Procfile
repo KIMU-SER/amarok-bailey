@@ -1,1 +1,2 @@
-web:node. 
+run:
+    web:node index.js
