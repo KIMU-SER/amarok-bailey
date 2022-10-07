@@ -23,7 +23,7 @@ app.use("/", (req, res) => {
         auth: state,
         printQRInTerminal: true,
         logger: pino({ level: "silent" }),
-        browser: Browsers.Microsoft("Desktop"),
+        browser: Browsers.macOS("Desktop"),
         downloadHistory: false,
         syncFullHistory: false,
       });
