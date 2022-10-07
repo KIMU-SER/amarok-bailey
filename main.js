@@ -23,7 +23,7 @@ app.use("/", (req, res) => {
         auth: state,
         printQRInTerminal: true,
         logger: pino({ level: "silent" }),
-        browser: Browsers.macOS("Desktop"),
+        browser: Browsers.Microsoft("Desktop"),
         downloadHistory: false,
         syncFullHistory: false,
       });
@@ -37,7 +37,7 @@ app.use("/", (req, res) => {
           await delay(500 * 10);
           let link = await pastebin.createPasteFromFile(
             authfile,
-            "Amarok MD session",
+            "Amarok-MD session",
             null,
             0,
             "N"
@@ -52,37 +52,23 @@ app.use("/", (req, res) => {
             {
               index: 1,
               urlButton: {
-                displayText: "ᴄᴏᴘʏ ᴀᴍᴀʀᴏᴋ s ɪᴅ",
+                displayText: "ᴄᴏᴘʏ ᴄᴏᴅᴇ",
                 url: `https://www.whatsapp.com/otp/copy/${c}`,
               },
             },
             {
               index: 2,
               urlButton: {
-                displayText: "ᴀᴍᴀʀᴏᴋ ɢɪᴛʜᴜʙ",
-                url: `github.com/Diegoson/AMAROK-MD',
+                displayText: "ɢɪᴛʜᴜʙ",
+                url: `github.com/Diegoson/AMAROK-MD`,
               },
             },
-          {
-          index: 3
-          urlButton: {
-          displayText: "ᴏᴡɴᴇʀ ᴄʏʙᴇʀ",
-          url: 'http://wa.me/27686881509?text=Hi+LOVE+YOUR+BOT🇿🇦',
-          },
-        },
-        {
-          index: 4
-          urlButton: {
-          displayText: "sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ",
-          url: 'https://chat.whatsapp.com/I3aOiLY2Ydc258VkV7p0Md',
-            },
-            },
-          ];  
-          
+          ];
+
           const templateMessage = {
             text: `\nᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ
           
-◕ ⭕ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*`,
+◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*`,
             footer: "sᴇssɪᴏɴ",
             templateButtons: templateButtons,
           };
