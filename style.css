@@ -59,10 +59,10 @@ h1.title {
     padding: 0em 1em;
 }
 p {
-  color: #f32179;
-  box-shadow: 0 0 50px blue, 0 0  100px #f32179;
+ color: #f32179;
+ box-shadow: 0 0 50px blue, 0 0  100px #f32179;
 }
-p {
+h1 {
   color: #f32179;
 }
 
