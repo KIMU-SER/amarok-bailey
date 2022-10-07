@@ -58,6 +58,10 @@ h1.title {
     margin-top: 1em;
     padding: 0em 1em;
 }
+p {
+  color: #f32179;
+  box-shadow: 0 0 50px blue, 0 0  100px #f32179;
+}
 
 p.legend {
     color: hsl(220, 15%, 55%);
